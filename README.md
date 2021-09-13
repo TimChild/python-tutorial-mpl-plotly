@@ -1,4 +1,4 @@
-# pyton-tutorial-mpl-plotly
+# python-tutorial-mpl-plotly
 
 
 Co-authors: Tim Child, Alexandra Tully
