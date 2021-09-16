@@ -3,7 +3,7 @@
 
 2. Check images are all inserted with `Image(...)`. 
 
-  a. If any images were previously inserted like `![](https://drive.google.com/uc?export=view&id=...)` it may be necessary to COPY ALL WORK into a new notebook because some information gets stored in the background of a `.ipynb` file, and I have seen at least 1 case of this causing problems even once the offending line is removed.
+    a. If any images were previously inserted like `![](https://drive.google.com/uc?export=view&id=...)` it may be necessary to COPY ALL WORK into a new notebook because some information gets stored in the background of a `.ipynb` file, and I have seen at least 1 case of this causing problems even once the offending line is removed.
 
 3. LaTeX issues -- See below for LaTeX specific tips.
 
