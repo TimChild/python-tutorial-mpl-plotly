@@ -1,13 +1,13 @@
 ## Export Troubleshooting:
 1. Comment out the `%%capture` line in the cell that actually runs the exporting. Towards the bottom of the whole thing you might find something like an error message that may give you a clue as to what is going wrong. Likely it will be a LaTeX issue and say something about adding a missing `$`. 
 
-2. If there is a space in your filename, try renaming and remove the space. In general, coding languages do not like spaces in filenames. I made the export script work fairly well with spaces, but it sometimes still causes issues.
+2. Check images are all inserted with `Image(...)`. 
 
-3. Check images are all inserted with `Image(...)`. 
+  a. If any images were previously inserted like `![](https://drive.google.com/uc?export=view&id=...)` it may be necessary to COPY ALL WORK into a new notebook because some information gets stored in the background of a `.ipynb` file, and I have seen at least 1 case of this causing problems even once the offending line is removed.
 
-  a. If any images were previously inserted like `![](https://drive.google.com/uc?export=view&id=...)` it may be necessary to COPY ALL WORK into a new notebook.
+3. LaTeX issues -- See below for LaTeX specific tips.
 
-4. LaTeX issues -- See below for LaTeX specific tips.
+4. Make a new `.ipynb` file and copy across cells a few at a time, making sure you can export the new `.ipynb` as you go. That will help narrow down which cell has a problem if it has been difficult to find so far. 
 
 <br>
 
