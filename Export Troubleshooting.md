@@ -1,13 +1,13 @@
 ## Export Troubleshooting:
 1. Comment out the `%%capture` line in the cell that actually runs the exporting. Towards the bottom of the whole thing you might find something like an error message that may give you a clue as to what is going wrong. Likely it will be a LaTeX issue and say something about adding a missing `$`. 
 
-2. Check images are all inserted with `Image(...)`. 
+2. Do a quick check that images are all inserted with `Image(...)`. 
 
-    a. If any images were previously inserted like `![](https://drive.google.com/uc?export=view&id=...)` it may be necessary to COPY ALL WORK into a new notebook because some information gets stored in the background of a `.ipynb` file, and I have seen at least 1 case of this causing problems even once the offending line is removed.
+3. Do a quick check of common LaTeX issues (often shows an error like `! Missing $ inserted.`) see below.
 
-3. LaTeX issues (often shows an error like `! Missing $ inserted.`) -- See below for LaTeX specific tips.
+4. **Make a new `.ipynb` file and copy across cells a few at a time, making sure you can export the new `.ipynb` as you go.** Either you will be able to identify which cell is actually causing the problem, or you will get all the way to the end and it will continue to export in which case the problem is fixed! 
+    (Just copying everything to a new notebook has been the solution for a few people this year, so I think Colab may have added some sort of history to files which can screw up the export process...)
 
-4. Make a new `.ipynb` file and copy across cells a few at a time, making sure you can export the new `.ipynb` as you go. That will help narrow down which cell has a problem if it has been difficult to find so far. 
 
 <br>
 
